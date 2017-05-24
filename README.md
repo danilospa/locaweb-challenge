@@ -75,5 +75,5 @@ docker-compose up --build -d
 Considerations
 ===============
 
-I tried not to use any external library on the development. Most of them are test and debugger utilities. Rubocop is used to lint the code and to analyze its complexity. I used Figaro library for configuration parameters like Twitter and Tweeps URLs.
+I tried not to use any external library on the development. Most of them are test and debugger utilities. Rubocop is used to lint the code and to analyze its complexity. I used Figaro library for configuration parameters like Twitter and Tweeps URLs and the authorization email for Tweeps.
 Rails were chosen due to my familiarity with this framework, but since there is no need for a database, ActiveRecord were removed.

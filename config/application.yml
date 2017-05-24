@@ -1,6 +1,7 @@
 defaults: &defaults
   LOCAWEB_TWEEPS_BASE_URL: 'http://tweeps.locaweb.com.br'
   TWITTER_BASE_URL: 'https://twitter.com'
+  TWEEPS_AUTHORIZATION_EMAIL: 'danilospalbuquerque@gmail.com'
 
 development:
   <<: *defaults

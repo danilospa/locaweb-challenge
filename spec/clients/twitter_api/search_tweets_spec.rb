@@ -8,7 +8,7 @@ RSpec.describe Clients::TwitterAPI::SearchTweets, type: :client do
   context 'when endpoint returns a string' do
     before do
       stub_request(:get, path)
-        .with(headers: { Username: 'danilospalbuquerque@gmail.com' })
+        .with(headers: Clients::TwitterAPI::DEFAULT_HEADERS)
         .and_return(body: 'string', status: 200)
     end
 
@@ -26,7 +26,7 @@ RSpec.describe Clients::TwitterAPI::SearchTweets, type: :client do
   context 'when endpoint returns a json' do
     before do
       stub_request(:get, path)
-        .with(headers: { Username: 'danilospalbuquerque@gmail.com' })
+        .with(headers: Clients::TwitterAPI::DEFAULT_HEADERS)
         .and_return(body: { field: 'value' }.to_json, status: 200)
     end
 

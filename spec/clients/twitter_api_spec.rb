@@ -7,6 +7,6 @@ RSpec.describe Clients::TwitterAPI, type: :client do
   end
 
   it 'sets correct headers' do
-    expect(described_class::DEFAULT_HEADERS).to eq Username: 'danilospalbuquerque@gmail.com'
+    expect(described_class::DEFAULT_HEADERS).to eq Username: ENV['TWEEPS_AUTHORIZATION_EMAIL']
   end
 end
