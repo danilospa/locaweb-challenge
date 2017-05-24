@@ -23,6 +23,8 @@ Metrics/MethodLength:
 
 Metrics/BlockLength:
   Enabled: true
+  Exclude:
+    - 'spec/**/*.rb'
 
 Metrics/AbcSize:
   Max: 20

@@ -1,0 +1,15 @@
+defaults: &defaults
+  LOCAWEB_TWEEPS_BASE_URL: 'http://tweeps.locaweb.com.br'
+  TWITTER_BASE_URL: 'https://twitter.com'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
